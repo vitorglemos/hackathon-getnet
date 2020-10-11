@@ -12,7 +12,7 @@ Como podemos, por meio de serviços financeiros, mudar a realidade e potencializ
 ### Solução
 <img src="https://github.com/vitorglemos/hackathon-getnet/blob/main/img/solucao.png?raw=true" width="800">
 
-A solução Nix permite que as empresas que precisam de crédito como empréstimo gere gift cards para clientes usarem futuramente. Essa modalidade funciona da seguinte forma:
+A solução FIX permite que as empresas que precisam de crédito como empréstimo emitem gift cards para clientes usarem futuramente. Essa modalidade funciona da seguinte forma:
 - Primeiro, a empresa cadastra uma meta (como uma vaquinha) e esse valor é gerado em vários gift cards. Por exemplo, se uma empresa precisa de R$ 20.000,00, ela pode gerar 100 gift cards de 200 reais para que os clientes comprem eu sem futuramente na própria loja cadastrada. 
 - Os clientes podem comprar os gift cards que são resgatados em uma data futura.
 - No dia do resgate, o cliente pode usar os gift cards para comprar produtos da loja, receber um retorno em dinheiro ou doar para um amigo
