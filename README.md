@@ -19,6 +19,10 @@ A solução FIX permite que as empresas que precisam de crédito como empréstim
 - Os clientes podem comprar os gift cards que são resgatados em uma data futura.
 - No dia do resgate, o cliente pode usar os gift cards para comprar produtos da loja, receber um retorno em dinheiro ou doar para um amigo.
 
+
+### Canvas
+<img src="https://github.com/vitorglemos/hackathon-getnet/blob/main/img/canvas.png?raw=true">
+
 ### Telas: Plataforma GIX
 
 #### Home Page - Cliente
