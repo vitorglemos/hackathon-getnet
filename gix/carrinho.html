@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <link rel="stylesheet" href="css/buy.css">
+
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Carrinho</h1>
+            <form action="" method="POST">
+                <fieldset>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="titular">Titular</label>
+                            <input type="text" name="titular" placeholder="Nome no cartão" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" placeholder="999.999.999-99" required="required">
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="cardNumber">Número do cartão</label>
+                            <input type="number" name="cardNumber" placeholder="Número do Cartão" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="validity">Valido até</label>
+                            <input type="date" name="validity" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="cvv">CVV</label>
+                            <input type="number" name="cvv" required="required">
+                        </div>
+                    </div>
+                    <!-- <div class="field-group">
+                        <div class="field">
+                            <label for="voucher">Valor do voucher</label>
+                            <select name="segment_select">
+                                <option value="1">R$10,00</option>
+                                <option value="2">R$20,00</option>
+                                <option value="3">R$30,00</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="quantity">Quantidade</label>
+                            <input type="number" name="quantity" placeholder="12" required="required">
+                        </div>
+                    </div> -->
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="nPartition">Número de parcelas</label>
+                            <input type="number" name="nPartition" placeholder="12" required="required">
+                        </div>
+
+
+                </fieldset>
+            </form>
+            <div class="btn">
+                <a href="home.html" id="save" class="primaryButton">Finalizar Compra</a>
+            </div>
+            </div>
+        </div>
+</body>
+<script src="scripts/cadastro.js"></script>
+
+</html>

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --title-color: #31AFB4;
+    --primary-color: #2b7174;
+    --text-normal: rgb(80, 80, 80);
+    --accent-color: #00e2cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-normal);
+    font-weight: bold;
+    line-height: 10px;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-normal);
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 50% 0 0;
+    width: 50%;
+}
+
+.container-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 50%;
+    width: 50%;
+    height: 100%;
+}
+
+.form {
+    background-color: white;
+    margin: 3vh auto;
+    border-radius: 8px;
+    height: 100%;
+    padding: 5%;
+    width: 50%;
+    max-width: 900px;
+}
+
+legend a {
+    text-align: right;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 50px;
+    border: 0;
+}
+
+form fieldset legend {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form fieldset legend h2 {
+    font-size: 14px;
+}
+
+form fieldset legend span {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+form .field label {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+form .field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15px;
+}
+
+.primaryButton {
+    margin: 10px;
+    background-color: var(--title-color);
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.primaryButton:hover {
+    background-color: var(--primary-color);
+}
+
+.primaryButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.BlackButton {
+    margin: 10px;
+    background-color: black;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.BlackButton:hover {
+    background-color: rgb(24, 24, 24);
+}
+
+.BlackButton:active {
+    position: relative;
+    top: 1px;
+}
+
+header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header a span {
+    margin-right: 16px;
+    background-image: url('../photos/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+header a .counter {
+    background: var(--title-color);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    align-content: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+header .cart-logout {
+    width: auto;
+    display: flex;
+}
+
+header .cart-logout a i {
+    margin-left: 3px;
+}
+
+
+/* 
+header img {
+    width: 110px;
+    height: 110px;
+} */
+
+.msg h4 {
+    color: red;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

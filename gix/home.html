@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/results-style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Home</title>
+</head>
+
+
+
+<body>
+
+    <div id="page-search-results">
+
+        <header>
+            <img src="photos/gix.png" width="10%" height="10%" alt="Logomarca">
+            <div class="cart-logout">
+                <a href="carrinho.html">
+                    Carrinho <i class="material-icons right">shopping_cart</i> 
+                    <!-- <div class="counter">0</div> -->
+                </a>
+                <a href="/">
+                    Sair<i class="material-icons right">directions_run</i>
+                </a>
+            </div>
+        </header>
+        <!-- busca -->
+        <div class="search">
+            <form action="search">
+                <div class="field">
+                    <input type="text" name="search" placeholder="Pesquise por Segmento">
+                    <button>
+                            <img src="photos/search.svg" alt="Buscar">
+                        </button>
+                </div>
+            </form>
+
+        </div>
+
+        <main>
+            <div class="row">
+                <div class="col s3">
+                    <div class="card hoverable">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="photos/comida.jpeg" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                            	<img src="bar22.png">
+                                <span class="card-title activator">Restaurante Dolores<i class="material-icons right">more_vert</i></span>
+
+                                <span class="card-title activator">Meta: R$ 10.000</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Restaurante Dolores<i class="material-icons right">close</i></span>
+                                <div class="address">
+
+                                    <p>Rua Presidente Epitafio Silva, 69</p>
+                                    <p>Niterói, RJ</p>
+                                </div>
+                                <div class="cart">
+                                    <a href="http://127.0.0.1/gix/carrinho.html" id="Restaurante Dolores" onclick="abrirModal(this.id)">Ver mais<i class="material-icons right">shopping_cart</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col s3">
+                    <div class="card hoverable">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="photos/moda.jpeg" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                            	<img src="bar33.png">
+                                <span class="card-title activator">Moda Fashion<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator">Meta: R$ 20.000</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Moda Fashion<i class="material-icons right">close</i></span>
+                                <div class="address">
+                                    <p>Rua Coronel Moreira Cezar, 1701</p>
+                                    <p>Sapucaia, RJ</p>
+                                </div>
+                                <div class="cart">
+                                    <a href="#" id="Moda Fashion" onclick="abrirModal(this.id)">Ver mais<i class="material-icons right">shopping_cart</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col s3">
+                    <div class="card hoverable">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="photos/barbearia.jpeg" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                            	<img src="bar11.png">
+                                <span class="card-title activator">Barbearia do Thiago<i class="material-icons right">more_vert</i></span>
+
+                                <span class="card-title activator">Meta: R$ 10.000</span>
+
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Barbearia do Thiago<i class="material-icons right">close</i></span>
+                                <div class="address">
+                                    <p>R. da Quitanda, 71</p>
+                                    <p>Rio de Janeiro, RJ</p>
+                                </div>
+                                <div class="cart">
+                                    <a href="#" id="Barbearia do Thiago" onclick="abrirModal(this.id)">Ver mais<i class="material-icons right">shopping_cart</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <!-- modal -->
+    <div class="bg-modal" id="modal">
+        <div class="meu-modal">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div class="cart">
+                <h4 id="company_name">Nome da Loja</h4>
+                <div class="left-align">
+                    <div class="field">
+                        1. Valor do voucher:
+                        <div class="field">
+                            <p class="range-field">
+                                <div class="text">R$
+                                    <div class="value">0</div>
+                                </div>
+                                <div class="range">
+                                    <p class="range-field">
+                                        <input type="range" id="vaucher_value" min="0" max="1000" step="1" value="0" />
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="field">
+                        2. Voucher válido a partir de*:
+                        <!-- <div class="values"> -->
+                        <div class="dates">
+                            <button class="item primaryButton">Nov/2020</button>
+                            <button class="item primaryButton">Dez/2020</button>
+                            <button class="item primaryButton">Jan/2021</button>
+                            <button class="item primaryButton">Fev/2021</button>
+                            <button class="item primaryButton">Mar/2021</button>
+                        </div>
+                        <!-- </div> -->
+                        <h6>*A validade deste voucher é de um ano.</h6>
+                    </div>
+                    <div class="field">
+                        <div class="values">
+                            <a href="#" id="add_cart" onclick="fecharModal()" class="primaryButton">Adicionar ao carrinho <i class="material-icons right">shopping_cart</i> </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/modal.js"></script>
+</body>
+
+
+</html>

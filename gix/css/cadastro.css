@@ -1,0 +1,46 @@
+form .field-group {
+    display: flex;
+    flex-direction: row;
+}
+
+form .field {
+    margin: 5px;
+}
+
+.container-redir {
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+#segment_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+    background-position: 218px center;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+
+.primaryButton {
+    margin: 20px;
+    background-color: var(--title-color);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.primaryButton:hover {
+    background-color: var(--primary-color);
+}
+
+.primaryButton:active {
+    position: relative;
+    top: 1px;
+}

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.meu-modal h4 {
+    color: var(--accent-color);
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    z-index: 50;
+    top: -100%;
+    color: rgb(218, 218, 218);
+    display: block;
+}
+
+.meu-modal {
+    width: 75%;
+    height: 95%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px auto 15px auto;
+    transition: 350ms;
+}
+
+.meu-modal span {
+    float: right;
+    font-size: 40px;
+    color: var(--accent-color);
+    margin: 8px 15px;
+    cursor: pointer;
+}
+
+.meu-modal span:hover {
+    /* color: white; */
+    transition: 350ms;
+}
+
+.meu-modal input[type="text"] {
+    font-size: 13px;
+    width: auto;
+    padding: 0;
+    font-weight: bold;
+    color: var(--normal-text);
+}
+
+.left-align {
+    align-items: flex-start;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 15px auto 15px auto;
+}
+
+.range {
+    width: 500px;
+}
+
+.text {
+    display: flex;
+    font-weight: bolder;
+}
+
+.field h6 {
+    font-size: 12px;
+}
+
+
+/* .meu-modal input {
+    color: rgb(218, 218, 218);
+    border: none;
+} */
+
+
+/* Grid Container */
+
+.grid {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+
+.grid-template-columns-4 {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px;
+}
+
+
+/* Estilos Gerais */
+
+.item {
+    margin: 8px;
+    background: grey;
+    text-align: center;
+    width: 90px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease 0s;
+    /* font-size: 1.5em; */
+}
+
+.item input:active {
+    background: var(--primary-color);
+}
+
+.values {
+    align-self: center;
+}
+
+.meu-modal .primaryButton {
+    width: auto;
+    padding: 10px;
+    color: white;
+}
+
+.date:active,
+.date:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px;
+}
+
+.dates {
+    display: flex;
+    /* width: 50%; */
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
