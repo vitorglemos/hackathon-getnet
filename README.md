@@ -26,6 +26,40 @@ A solução FIX permite que as empresas que precisam de crédito como empréstim
 | JavaScript, HTML5, CSS3 | [Web Development]|
 | SQL | [Database]|
 
+### Voucher SHA1 Generator
+```
+<?php
+function rand_sha1($length) {
+  $max = ceil($length / 40);
+  $random = '';
+  for ($i = 0; $i < $max; $i ++) {
+    $random .= sha1(microtime(true).mt_rand(10000,90000));
+  }
+  return substr($random, 0, $length);
+}
+
+$quant_voucher = 10;
+for ($j = 0; $j < $quant_voucher; $j++){
+	for ($x = 0; $x < 1000; $x++){
+		$temp = rand_sha1(50);
+	}
+	echo $temp."\n";
+}
+```
+
+#### SHA1 hash code 
+```
+[0]->4dc3d2f27e33eceeb00896727d91d676685b7472785afd0a5b 
+[1]->74a2f0003252e8cff10ff934e7ec25969b9056c89076ccfbde 
+[2]->040132a84564b37007185e775c582326eb899f595e36eb7218 
+[3]->7da7aed2d9b442c55c43a73f993165892597337044bb287c8f 
+[4]->8ed02d3ad9901455719193ba2a9ad9a4879fe2686862a37376 
+[5]->c77239227e089ecd0b812210b61501d2582769b7b39090853a 
+[6]->12e0c9601276a6f8efb5400b08ca4fa1c62e83055ee2a5217e 
+[7]->94e49b58c059e806e20b359872c4105692774a0facead5de34 
+[8]->57365edf9dc6776bfb40ececb535edddfce008ff2fbc6a33d4 
+[9]->d9539d8bc2f25b2fa08a26f5a86377ef4e1c32e8d59f63d749 
+```
 
 ### API Pagamentos Getnet
 
