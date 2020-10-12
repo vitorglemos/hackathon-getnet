@@ -65,6 +65,8 @@ for ($j = 0; $j < $quant_voucher; $j++){
 
 A API de pagamentos da Getnet é utilizada para o pagamento dos gift cards gerados pelas empresas que necessitam de algum tipo de financiamento. Nós utilizamos os cartões e acessos de teste que estão disponíveis no manual da API Getnet Pay. 
 
+<img src="https://github.com/vitorglemos/hackathon-getnet/blob/main/img/api.png?raw=true" width="800">
+
 
 #### Uso da API - Validação do cartão
 ```
