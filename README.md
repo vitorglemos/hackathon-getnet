@@ -1,7 +1,9 @@
 # Hackathon-Getnet
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-<img src="https://github.com/vitorglemos/hackathon-getnet/blob/main/img/banner.png?raw=true" width="800">
+<p align="center">
+<img src="https://github.com/vitorglemos/hackathon-getnet/blob/main/img/banner.png?raw=true"  width="800">
+</p>
 
 ### Desafio
 
